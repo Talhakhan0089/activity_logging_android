@@ -1,0 +1,13 @@
+<resources>
+<style name="Widget.MyApp.Button" parent="Widget.MaterialComponents.Button">
+    <item name="backgroundTint">@color/primaryColor</item>
+    <item name="elevation">4dp</item>
+    <item name="cornerRadius">8dp</item>
+</style>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/black</item>
+    </style>
+</resources>

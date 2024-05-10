@@ -57,7 +57,7 @@ class ActivityDatabaseHelper(context: Context) :
         val db = readableDatabase
         val projection = arrayOf(COLUMN_ID, COLUMN_NAME, COLUMN_USER, COLUMN_NOTES, COLUMN_START_TIME, COLUMN_END_TIME)
         val cursor = db.query(
-            TABLE_NAME, projection, null, null, null, null, null
+            TABLE_NAME, projection, null, null, null, null, "$COLUMN_START_TIME ASC"
         )
         val activities = mutableListOf<Activity>()
         with(cursor) {

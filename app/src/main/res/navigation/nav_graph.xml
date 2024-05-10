@@ -15,6 +15,10 @@
         <action
             android:id="@+id/action_dashboardFragment_to_activityListFragment"
             app:destination="@id/activityListFragment" />
+
+        <action
+            android:id="@+id/action_dashboardFragment_to_overviewFragment"
+            app:destination="@id/overviewFragment" />
     </fragment>
 
     <fragment
@@ -38,4 +42,14 @@
         android:name="com.example.myapplication.ActivityListFragment"
         android:label="Activity List"
         tools:layout="@layout/fragment_activity_list" />
+
+    <fragment
+        android:id="@+id/overviewFragment"
+        android:name="com.example.myapplication.OverviewFragment"
+        android:label="Overview"
+        tools:layout="@layout/fragment_overview">
+        <action
+            android:id="@+id/action_overviewFragment_to_activityListFragment"
+            app:destination="@id/activityListFragment" />
+    </fragment>
 </navigation>

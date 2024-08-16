@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".DashboardActivity">
+
+    <!-- Total Time Logged using MaterialTextView -->
+
+    <!-- Time Spent on Categories using MaterialTextView -->
+
+    <!-- Trends Over Time using MaterialTextView -->
+
+    <!-- Button to switch to Summary View using MaterialButton -->
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textViewTotalTimeLogged"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="84dp"
+        android:text="@string/total_time_logged"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textViewTimeSpentOnCategories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="@string/time_spent_on_categories"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewTotalTimeLogged"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTotalTimeLogged" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textViewTrendsOverTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/trends_over_time"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewTimeSpentOnCategories"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTimeSpentOnCategories" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonSummaryView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/summary_view"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewTrendsOverTime"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTrendsOverTime"
+        android:layout_marginTop="20dp" />
+
+    <!-- Button to switch to Detailed View using MaterialButton -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonDetailedView"
+        android:layout_width="wrap_content"
+        style="@style/Widget.MyApp.Button"
+        android:layout_height="wrap_content"
+        android:text="@string/detailed_view"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/buttonSummaryView"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSummaryView"
+        android:layout_marginTop="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
